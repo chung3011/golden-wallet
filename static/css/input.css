@@ -179,3 +179,11 @@
 .color-icon:hover{
   color: white;
 }
+.color-suggest{
+  color: #f54844;
+  text-decoration: none;
+}
+.color-suggest:hover{
+  color: #e57373;
+  text-decoration: none;
+}
