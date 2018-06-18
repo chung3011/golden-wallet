@@ -36,7 +36,7 @@ const Show = ()=>{
       }
       else {
         if (value_max < saving){
-            content_warning = `Rất tiếc! kế hoạch của bạn không khả thi. Hãy tăng thêm giời gian hoặc khả năng tiết kiệm mỗi tháng để đạt được mục tiêu.!`;
+            content_warning = `Rất tiếc! Kế hoạch của bạn không khả thi. Hãy tăng thêm giời gian hoặc khả năng tiết kiệm mỗi tháng để đạt được mục tiêu!`;
             document.querySelector("#show").insertAdjacentHTML('afterbegin', Content_Warning(content_warning));
             console.log("Saving > Income");
             return false;
