@@ -1,7 +1,7 @@
 <div class="d-flex h-100">
-  <div class="d-flex center flex-column w-50">
+  <div class="d-flex center flex-column w-45">
     <div>
-      <canvas id="chart" width="500" height="352"></canvas>
+      <canvas id="chart" width="470" height="352"></canvas>
       <script>
         var pieData = [
         {% for item, label, colors in set %}
@@ -24,8 +24,8 @@
     <br>
     <h5>Mỗi tháng bạn cần tiết kiệm {{ratio_save_income}} % thu nhập</h5>
   </div>
-  <div class="w-45">
-      <canvas id="chart_bar" width="600" height="400"></canvas>
+  <div class="w-70">
+      <canvas id="chart_bar" width="500" height="400"></canvas>
       <script>
         var barData = {
           labels : [
