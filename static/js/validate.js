@@ -29,14 +29,14 @@ const Show = ()=>{
 
       $("#show").empty();
       if (value_max > value_income){
-        content_warning = `Số tiền tiết kiệm mỗi tháng lớn hơn thu nhập mỗi tháng!`;
+        content_warning = `Không hợp lý. Số tiền tiết kiệm mỗi tháng lớn hơn cả thu nhập!`;
         document.querySelector("#show").insertAdjacentHTML('afterbegin', Content_Warning(content_warning));
         console.log("Max > Income");
         return false;
       }
       else {
         if (value_max < saving){
-            content_warning = `Không thể đạt được mục tiêu. Hãy điều chỉnh lại mục tiêu hoặc thời gian!`;
+            content_warning = `Rất tiếc! kế hoạch của bạn không khả thi. Hãy tăng thêm giời gian hoặc khả năng tiết kiệm mỗi tháng để đạt được mục tiêu.!`;
             document.querySelector("#show").insertAdjacentHTML('afterbegin', Content_Warning(content_warning));
             console.log("Saving > Income");
             return false;
