@@ -43,7 +43,7 @@ def index():
 @app.route('/saving')
 def saving():
     colors = ["#f54844", "#dbdad3"]
-    labels = ["Tiết kiệm","Thu nhập"]
+    labels = ["Tiết kiệm","Còn lại"]
 
     goal = int(session['goal'])
     month = int(session['month'])
@@ -51,9 +51,9 @@ def saving():
     saving = float(session['saving'])
     income = float(session['income'])
     ratio_save_income = round(saving/income*100,2)
-
+    left = income - round(saving,2)
     pie_labels = labels
-    pie_values = [round(saving,2), session['income']]
+    pie_values = [round(saving,2), left]
 
     bar_values= []
     bar_labels = []
